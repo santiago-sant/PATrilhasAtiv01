@@ -1,12 +1,23 @@
-using System;
+class Program
+	{
+		public static void Main(string[] args)
+		{
+        Console.WriteLine("Digite sim ou nao");
+        string entrada = Console.ReadLine().ToLower();
+        bool resposta = false;
+        if (entrada == "sim")
+        {
+            resposta = true;
+            Console.WriteLine("Você digitou sim");
+        }
+        else if (entrada == "nao")
+        {
+            resposta = false;
+            Console.WriteLine("Você digitou nao");
+        }
+        Console.Write("Pressione qualquer tecla para continuar . . . ");
+        Console.ReadKey(true);
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Digite um número :");
-        string numerostr = Console.ReadLine();
-        float numeroFlo = float.Parse(numerostr);
-        Console.WriteLine("Seu número é: " + numeroFlo);
-    }
-}
+
+		}
+	}
