@@ -1,0 +1,22 @@
+using System;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine(" Informe seu estado :");
+            string estado = Console.ReadLine();
+        Console.WriteLine("Informe sua cidade :");
+            string cidade = Console.ReadLine();
+        Console.WriteLine("Informe seu bairro :");
+            string bairro = Console.ReadLine();
+        Console.WriteLine("Informe sua rua");
+            string rua = Console.ReadLine();
+        Console.WriteLine("Informe o numero de sua casa");
+            string numero = Console.ReadLine();
+
+        Console.WriteLine("seu endereço e : " + estado + ", " + cidade  + ", bairro " + bairro + " Numero " + numero);
+
+        
+    }
+}
